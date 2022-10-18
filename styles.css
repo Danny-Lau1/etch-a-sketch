@@ -1,20 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
-    border: solid brown;
-    height: 800px;
-    width: 800px;
+    border: solid #ff3632;
+    border-width: 60px;
+    border-radius: 30px;
+    height: 600px;
+    width: 600px;
     display: flex;
     flex-direction: column;
 
 }
 
 .column {
-    border: solid red;
+    border: solid lightgray;
+    border-width: 1px;
     display: flex;
     flex: 1;
 }
 
 .row {
-    border: solid green;
+    border: solid lightgray;
+    border-width: 1px;
     flex: 1;
 
 
