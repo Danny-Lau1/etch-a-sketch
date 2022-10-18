@@ -1,0 +1,21 @@
+.container {
+    border: solid brown;
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.column {
+    border: solid red;
+    display: flex;
+    flex: 1;
+}
+
+.row {
+    border: solid green;
+    flex: 1;
+
+
+}
