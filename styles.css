@@ -4,32 +4,34 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .logo {
-    color: aliceblue;
+    font-size: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 1000px;
     height: 100px;
-    background-color: #ff3632;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    color: #ffd600;
+    background-color: #ff3632;
 
 }
 
 .container {
-    border: solid #ff3632;
-    border-width: 100px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-top: none;
-    height: 600px;
-    width: 800px;
     display: flex;
     flex-direction: column;
+    border: solid #ff3632;
+    height: 600px;
+    width: 800px;
+    border-width: 100px;
+    border-top: none;
+    border-bottom: none;
+
 }
 
 .column {
@@ -47,8 +49,41 @@ body {
 }
 
 .bottomButtons {
-    border: solid;
-    width: 1000px;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+    background-color: #ff3632;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.artistButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 20px;
+    color: papayawhip;
+}
+
+
+.paletteButton,
+.sizeButton {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #ff3632;
+    padding: 4px;
+    background-color: #ffd600;
+}
+
+.sizeControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 20px;
+    color: papayawhip;
 }
