@@ -1,20 +1,37 @@
-
-
-
+let size = 20
 const container = document.querySelector('.container')
+const sizeButtons = document.querySelectorAll('.sizeButton')
+const eraseButton = document.getElementById("erase")
 
-createGrid()
+
+// Default size with drawing function 
+createGrid(size)
 draw()
 
-function createGrid() {
+sizeButtons.forEach((button) => {
+    button.addEventListener('click', gridSize)
+})
 
-    for (let i = 0; i < 16; i++) {
+
+
+
+
+function gridSize(button) {
+    size = this.id
+    createGrid(size)
+}
+
+function createGrid(size) {
+
+    container.innerHTML = "" // used to clear the grid
+
+    for (let i = 0; i < size; i++) {
         const column = document.createElement('div')
         column.classList.add('column')
         container.appendChild(column)
 
 
-        for (let j = 0; j < 16; j++) {
+        for (let j = 0; j < size; j++) {
             const row = document.createElement('div')
             row.classList.add('row')
             column.appendChild(row)
@@ -22,6 +39,7 @@ function createGrid() {
 
         }
     }
+    draw()
 }
 
 function draw() {
