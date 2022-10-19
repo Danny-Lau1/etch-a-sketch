@@ -1,6 +1,6 @@
 # etch-a-sketch
 
-![screenshot of a new canvas ]()
+![screenshot of a new canvas ](https://github.com/Danny-Lau1/etch-a-sketch/blob/main/images/etch-a-sketch-screenshot.png)
 
 ## Overview
 
