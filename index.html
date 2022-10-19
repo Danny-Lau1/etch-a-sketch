@@ -13,24 +13,26 @@
     <div class="logo">
         etch-a-sketch
     </div>
-    <div class="container">
-    </div>
+
+    <div class="container"></div>
     <div class="bottomButtons">
         <div class="artistButtons">
             Painting Palette
-            <button class="paletteButton" , id="black">Black</button>
-            <button class="paletteButton" , id="customColor">Choose Color</button>
-            <button class="paletteButton" , id="erase">Erase</button>
-            <button class="paletteButton" , id="reset">Reset</button>
-
+            <button class="paletteButton" id="black">Black</button>
+            <label for="customColor">Choose Color<input type="color" id="customColor" name="customColor"></label>
+            <button class="paletteButton" id="erase">Erase</button>
+            <button class="paletteButton" id="reset">Reset</button>
         </div>
         <div class="sizeControls">
             Grid Size
-            <button class="sizeButton" , id=20>20x20</button>
-            <button class="sizeButton" , id=50>50x50</button>
-            <button class="sizeButton" , id=100>100x100</button>
+            <button class="sizeButton" id=20>20x20</button>
+            <button class="sizeButton" id=50>50x50</button>
+            <button class="sizeButton" id=100>100x100</button>
         </div>
     </div>
+    <footer>Created By: Danny Lau<a href="https://www.linkedin.com/in/danlau05/"> <img src="images/linkedin.png"
+                class="footerimage" alt="linkedin icon"></a> <a href="https://github.com/Danny-Lau1"> <img
+                src="images/github.png" class="footerimage" alt="github icon"></a></footer>
 
     <script src="etch-a-sketch.js" defer></script>
 </body>
